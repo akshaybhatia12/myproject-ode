@@ -1,0 +1,214 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="stylesheet" type="text/css" href="home.css"/>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+
+</head>
+
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+
+$(document).ready(function(){
+		/* for the first button*/				   
+			$('#passreset').click(function(){
+			
+			$('#passrst').show('slide');
+			$('#harrst').hide();
+			$('#sofrst').hide();
+			$('#accrst').hide();
+			});		   
+						   
+						/* for the second button*/
+					$('#hrdreset').click(function(){
+			
+			$('#harrst').show('slide');
+			$('#passrst').hide();
+			$('#sofrst').hide();
+			$('#accrst').hide();
+			
+			});		
+				  /* for the third button*/ 
+				$('#sofreset').click(function(){
+			
+			$('#sofrst').show('slide');
+			$('#harrst').hide();
+			$('#passrst').hide();
+			$('#accrst').hide();
+			
+			});		
+			
+				 /* for the forth button*/ 	
+				  
+			$('#accreset').click(function(){
+			
+			$('#accrst').show('slide');
+			$('#harrst').hide();
+			$('#sofrst').hide();
+			$('#passrst').hide();
+			//$('#hpsm9_alm_ppm_menu').hide();
+			});	
+			
+			
+			 $('.home').click(function(){
+			
+			$('#submenu').show('slide');
+			
+			$('#harrst').hide();
+			$('#sofrst').hide();
+			$('#passrst').hide();
+			$('#accrst').hide();
+			$('#home1').show();
+			});		
+			   
+			 $('#home1').click(function(){
+			
+			$('#submenu').show('slide');
+		//	$('#home1').hide();
+			$('#harrst').hide();
+			$('#sofrst').hide();
+			$('#passrst').hide();
+			$('#accrst').hide();
+			$('.home').show();
+			});	
+			$('#hpsm9_btn').click(function(){
+			
+			$('#hpsm9_alm_ppm_menu').show('slide');
+			$('#accrst').hide();
+
+			$('.home').show();
+			// $('#submenu').hide();
+           
+			});
+			 $('.home2').click(function(){
+			
+			$('#submenu').show('slide');
+			$('#hpsm9_alm_ppm_menu').hide();
+			$('#harrst').hide();
+			$('#sofrst').hide();
+			$('#passrst').hide();
+			$('#accrst').hide();
+			$('#home1').show();
+			});	
+			$('#back_hp').click(function(){
+			
+			
+			$('#hpsm9_alm_ppm_menu').hide();
+			$('#accrst').show('slide');
+			});	
+			$('#notes_db_btn').click(function(){
+		      window.location = 'Notes://US-IFSAPP001/85257CD600445042/';
+			
+			});	
+			$('#ad_btn').click(function(){
+			
+			$('#active_dir_menu').show('slide');
+			
+			$('#accrst').hide();
+
+			$('.home').show();
+			// $('#submenu').hide();
+           
+			});
+			$('#back_ad1').click(function(){
+			
+			
+			$('#active_dir_menu').hide();
+			$('#accrst').show('slide');
+			});	
+			$('#home2').click(function(){
+			
+			$('#submenu').show('slide');
+			$('#active_dir_menu').hide();
+			$('#harrst').hide();
+			$('#sofrst').hide();
+			$('#passrst').hide();
+			$('#accrst').hide();
+			$('#home1').show();
+			});	
+		
+});
+</script>
+<!--
+<div id="first"></div>
+<div id ="second"></div>
+<div id="third"></div>
+<div id ="forth"></div>
+<div id ="fifth"></div>
+-->
+<div id= "main" >
+<div id="head">PwC US IT Self Help Portal
+</div><!-- end of Head --> 
+<div id="menu">
+
+<div id ="submenu">
+<div id="menu1"><input type="button" id="passreset" class="btn" value=" Desktop "/></div> 
+<div id="passrst" >
+
+<input type="button" class="home"  value="Home"/></div>   
+<!-- end of menu1 -->
+
+<div id="menu2"><input type="button" id="hrdreset" class="btn" value="Hardware Reset"/></div> 
+<div id="harrst" ><input type="button" class="home" value="Home"/></div>
+<!-- end of menu2 -->
+
+<div id="menu3"><input type="button" id="sofreset"class="btn"  value="Software Reset"/></div> 
+<div id="sofrst" ><input type="button" class="home" value="Home"/></div>  
+ <!-- end of menu3 -->
+
+<div id="menu4">
+<!--     ACCESS   REQUEST BUTTON   -->
+<input type="button" id="accreset"class="btn" value="Access Reset"/></div> 
+<div id="accrst" >
+<div id ="access_reqst_page">Access Request</div>
+<div id="hpsm9_alm_ppm" ><input id="hpsm9_btn" type="button" class="access_request_button" value="HP SM9/ALM/PPM"/>
+
+</div>  
+<div id="Webhost_id" ><input id="web_btn" type="button" class="access_request_button" value="Webhost ID"/></div>  
+<div id="Cisco_inter_dialing" ><input id="cisco_btn" type="button" class="access_request_button" value="Cisco International Dialing"/></div>  
+<div id="active_dir" ><input id="ad_btn"type="button" class="access_request_button" value="Active Directory"/></div>  
+<div id="windows_server" ><input type="button" class="access_request_button" value="Windows Server"/></div>  
+<div id="audio_conf_num" ><input type="button" class="access_request_button" value="Audio Conference Number"/></div>  
+<div id="sql_db_creat" ><input type="button" class="access_request_button" value="SQL Database Creation"/></div>  
+<div id="sft_dms_ftp" ><input type="button" class="access_request_button" value="SFT/DMS/FTP access"/></div>  
+<div id="trusted_list" ><input type="button" class="access_request_button" value="Add website to Trusted List"/></div>  
+<div id="adp_access_prtal" ><input type="button" class="access_request_button" value="ADP/Accessing Payroll"/></div>  
+<div id="qualtrics" ><input type="button" class="access_request_button" value="Qualtrics"/></div>  
+<div id="condeco_conf_room" ><input type="button" class="access_request_button" value="Condeco Conference Room"/></div>  
+<div id="shared_drive" ><input type="button" class="access_request_button" value="Shared Drive"/></div>  
+<div id="exception_req" ><input type="button" class="access_request_button" value="Exception Request"/></div>  
+<div id="net_port" ><input type="button" class="access_request_button" value="Network Port"/></div>      
+<input type="button" id ="home1" value="Home"/></div>  
+
+<!-- END  OF   ACCESS   REQUEST BUTTON   -->
+</div>
+  <!-- end of menu4 -->
+ 
+</div><!-- end of submenu -->
+ <div id="hpsm9_alm_ppm_menu">   <!--      HPSM9    Option             -->
+ <input id="back_hp" class="back_button"type="button"  value="Back"/>
+ <input type="button" class="home2"  value="Home"/>
+ <div id="hpsm9_alm_ppm_menu_item"><h>HP SM9/ALM/PPM Requests</h><br/>
+ <p>Click Link below to access Lotus Notes Database and to submit the request
+ </p>
+<input type="button" value="Submit" id="notes_db_btn"/></div>
+ </div> <!--    END  HPSM9    Option              -->
+ 
+ <!--     ACTIVE DIRECTORY   Option             -->
+ 
+  <div id="active_dir_menu">   
+ <input id="back_ad1" class="back_button"type="button"  value="Back"/>
+ <input type="button" id="home3" class="home2"  value="Home"/>
+ <div id="active_dir_menu_item">
+ <div id="active_direc_req"></div>
+ </div>
+ </div> <!--    END  ACTIVE DIRECTORY              -->
+
+</div><!-- end of menu -->
+
+</div><!-- end of main -->
+ 
+<body>
+</body>
+</html>
